@@ -1,8 +1,8 @@
-let Post = {
+let User = {
     findAll(){
         return new Promise((resolve, reject) => {
             //resolve("ok posts!");
-            let uri = "http://localhost:3000/posts";
+            let uri = "http://localhost:3000/activeUsers";
             let request = new XMLHttpRequest();
 
             request.open("GET", uri, true); //true for asychonous
@@ -22,6 +22,4 @@ let Post = {
 }
 
 
-export default Post;
-
-
+export default User;

@@ -4,9 +4,9 @@ Put what I learned in JavaScript ES2015 to practice by building out features for
 
 [Check it out! - to be deployed to aws](https://www.aws.com/)
 
-# Built with JavaScript (ES2015), React.js, jsone-server, Babel with Gulp
+# Built with
 
-Implement JavaScipt ES2015. Transpile ES2015 (including modules) with Babel, Gulp and Browserify.
+Implement JavaScipt ES2015, React.js, jsone-server,. Transpile ES2015 (including modules) with Babel, Gulp and Browserify.
 
 
 # Installing
@@ -14,6 +14,7 @@ Implement JavaScipt ES2015. Transpile ES2015 (including modules) with Babel, Gul
 1. Clone the repo
 2. `npm install -g gulp` to install Gulp globally.
 3. `npm install` to resolve project dependencies.
+4. npm install xss-filters --save
 
 # Developing
 
