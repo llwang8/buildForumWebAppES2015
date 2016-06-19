@@ -2,7 +2,7 @@ import xss from "./xss-filters";
 
 let ui = {
     renderPosts(posts){
-        let elements = posts.map((post) => {
+        let elements = posts.map( (post) => {
             let {title, lastReply} = post;
             return articleTemplate(title, lastReply);
         });
@@ -27,7 +27,7 @@ function userTemplate(name,avatar){
     let safeAvatar = xss.inHTMLData(avatar);
 
     let template = `
-        <div class='active-avatar'>
+        <div class="active-avatar">
             <img width="54" src="assets/images/${safeAvatar}" />
             <h5 class='post-author'>${safeName}</h5>
         </div>`;
@@ -43,11 +43,11 @@ function articleTemplate(title, lastReply){
                 ${safeTitle}
             </h2>
             <p class='post-meta'>
-                ${safeLastReply}
+                last reply on ${safeLastReply}
             </p>
         </article>`;
     return template;
-
+}
 
 export default ui;
 
